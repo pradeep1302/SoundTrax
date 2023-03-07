@@ -1,0 +1,118 @@
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+.heading {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+.headingImg {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.headingText {
+    color: aliceblue;
+    position: absolute;
+    left: 110px;
+    top: 10px;
+    font-size: 300%;
+    font-family: cursive;
+}
+
+.mainImg {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 90%;
+    max-width: 480px;
+}
+
+
+
+.songBox {
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+    flex-grow: 3;
+}
+
+.song {
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: black;
+    width: 70%;
+}
+
+.songTitle {
+    display: inline-block;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.gif {
+    margin-left: 30px;
+    height: 5%;
+    width: 5%;
+}
+
+.control {
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 10px;
+}
+
+.fcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.player {
+    position: sticky;
+    bottom: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0px;
+    width: 100%;
+    color: aliceblue;
+    border-radius: 30px;
+}
+
+.playerTitle {
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.seed {
+    width: 90%;
+    height: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+.timeStamp {
+    float: right;
+    color: aliceblue;
+    margin-right: 5%;
+    margin-bottom: 0;
+}

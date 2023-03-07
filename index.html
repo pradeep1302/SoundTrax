@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="./images/icons8-musical-notes-16.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="heading">
+        <img class="headingImg" src="./images/icons8-musical-notes-40.png">
+        <span class="headingText">Music</span>
+    </div>
+    <div class="fcontainer">
+        <img class="mainImg" src="./images/main.png">
+        <div class="songBox">
+            <div class="song">
+                <h1 class="songTitle" id="G1"></h1>
+                <span class="control">
+                    <img src="./images/play.jpg" class="play" id="1">
+                </span>
+            </div>
+            <div class="song">
+                <h1 class="songTitle" id="G2"></h1>
+                <span class="control">
+                    <img src="./images/play.jpg" class="play" id="2">
+                </span>
+            </div>
+            <div class="song">
+                <h1 class="songTitle" id="G3"></h1>
+                <span class="control">
+                    <img src="./images/play.jpg" class="play" id="3">
+                </span>
+            </div>
+            <div class="song">
+                <h1 class="songTitle" id="G4"></h1>
+                <span class="control">
+                    <img src="./images/play.jpg" class="play" id="4">
+                </span>
+            </div>
+            <div class="song">
+                <h1 class="songTitle" id="G5"></h1>
+                <span class="control">
+                    <img src="./images/play.jpg" class="play" id="5">
+                </span>
+            </div>
+        </div>
+        <div class="song player">
+            <p class="playerTitle"></p>
+            <p class="timeStamp"></p>
+            <input type="range" class="seed" min="0" max="100" value="0">
+            <center>
+                <img src="./images/previous copy.jpg" class="mainPrev">
+                <img src="./images/play copy.jpg" class="mainPlay">
+                <img src="./images/next copy.jpg" class="mainNext">
+            </center>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
