@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: black;
     margin: 0;
 }
 
@@ -35,7 +35,6 @@ body {
 
 .songBox {
     display: flex;
-    background-color: bisque;
     flex-direction: column;
     flex-wrap: wrap;
     overflow: auto;
@@ -48,10 +47,18 @@ body {
     background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 20px;
     border: 2px solid black;
     color: black;
+    width: 70%;
+    box-shadow: 3px 3px 3px 3px #DB2EF2;
+}
+
+.playgif {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     width: 70%;
 }
 
@@ -62,6 +69,11 @@ body {
     margin-bottom: 5px;
     margin-left: 10px;
     font-size: 20px;
+}
+
+#plgif {
+    width: 100%;
+    height: 70%;
 }
 
 .gif {
@@ -91,6 +103,7 @@ body {
     width: 100%;
     color: aliceblue;
     border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px #26A646;
 }
 
 .playerTitle {
@@ -115,4 +128,37 @@ body {
     color: aliceblue;
     margin-right: 5%;
     margin-bottom: 0;
+}
+
+
+@keyframes floatin {
+    from {
+        margin-top: 40px;
+        opacity: 0%;
+    }
+
+    to {
+        margin-top: 20px;
+        opacity: 100%;
+    }
+}
+
+.anim {
+    animation-name: floatin;
+    animation-duration: 1.5s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.animappear {
+    animation-name: appear;
+    animation-duration: 1.5s;
 }
