@@ -5,6 +5,8 @@ var playing = -1;
 var progress;
 var first = true;
 document.addEventListener("DOMContentLoaded", function () {
+    $('.song').addClass('anim');
+    $('.mainImg').addClass('animappear');
     for (var i = 0; i < songs.length; i++) {
         document.getElementById("G" + (i + 1)).innerHTML = "<em>" + songs[i] + "</em>";
     }
