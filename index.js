@@ -1,3 +1,28 @@
+let myPlayer = document.getElementById("show");
+let height = window.innerHeight;
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
+        myPlayer.style.display = "block";
+    } else {
+        myPlayer.style.display = "none";
+        document.getElementById('check').checked = false;
+        showHidePan();
+    }
+}
+
+function showHidePan() {
+    let checkbox = document.getElementById('check');
+    let songBox = document.getElementById('sBox');
+    if (checkbox.checked) {
+        songBox.style.display = "flex";
+    } else {
+        songBox.style.display = "none";
+    }
+}
+
+
 var songs = ["Music.mp3", "Electro-Light.mp3", "Alone.mp3", "Rain.mp3", "Travel.mp3"];
 var audio = new Audio("./Songs/" + songs[0]);
 var onDeck = 1;
@@ -57,7 +82,7 @@ function Deck() {
         listen();
     }
 }
-
+//function controling the pause/play
 function Aplay(request) {
     if (onDeck !== -1) {
         if (onDeck !== request) {
@@ -108,7 +133,6 @@ function Aplay(request) {
 }
 function listen() {
     audio.addEventListener('timeupdate', function () {
-        console.log('timeupdate');
         progress = parseInt((audio.currentTime / audio.duration) * 100);
         document.querySelector(".seed").value = progress;
         document.querySelector(".timeStamp").innerHTML = formatTime(Math.round(audio.currentTime * 10) / 10) + " / " + formatTime(Math.round(audio.duration * 10) / 10);
