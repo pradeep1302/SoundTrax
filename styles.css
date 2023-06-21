@@ -22,9 +22,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
     backdrop-filter: blur(15px);
+    position: relative;
+}
+
+.navigate {
+    position: absolute;
+    top: 0;
 }
 
 .back {
@@ -88,6 +94,8 @@ nav label.heading {
     gap: 1vh;
     color: white;
     font-size: min(5vw, 20px);
+    position: absolute;
+    bottom: 0;
 }
 
 .section {
