@@ -95,7 +95,7 @@ nav label.heading {
     color: white;
     font-size: min(5vw, 20px);
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
 }
 
 .section {
