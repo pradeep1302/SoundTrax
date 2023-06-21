@@ -3,22 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundTrax</title>
-    <link rel="icon" href="./images/icons8-musical-notes-16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/icons8-musical-notes-80.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div class="heading">
-        <img class="headingImg" src="./images/icons8-musical-notes-40.png">
-        <span class="headingText">SoundTrax</span>
+    <div class="back">
+        <div class="cover">
+            <nav>
+                <img src="./images/icons8-musical-notes-80.png">
+                <label class="heading">SoundTrax</label>
+            </nav>
+            <div class="coverBody">
+                <h1>Welcome to Sound Trax</h1>
+                <p>
+                    Where melodies come to life and rhythms ignite your soul! Step into a world where every note carries
+                    a
+                    story and every
+                    beat moves your spirit. We're thrilled to have you here, ready to embark on a musical journey like
+                    no
+                    other.
+                </p>
+            </div>
+            <div class="scroll">
+                <div>
+                    Scroll to enjoy the Rythm
+                </div>
+                <i class="fa fa-arrow-down"></i>
+            </div>
+        </div>
     </div>
-    <div class="fcontainer">
-        <img class="mainImg" src="./images/guitar.jpg">
-        <div class="songBox">
-            <div class="song">
+    <div class="section">
+        <h1>ARTISTS</h1>
+        <ul class="carousel">
+            <li class="card">
+                <img src="./images/1.png" alt="img">
+                <h1>Lata Mangeshkar</h1>
+            </li>
+            <li class="card">
+                <img src="./images/2.png" alt="img">
+                <h1>Kishor Kumar</h1>
+            </li>
+            <li class="card">
+                <img src="./images/3.png" alt="img">
+                <h1>Shankar Mahadevan</h1>
+            </li>
+            <li class="card">
+                <img src="./images/4.png" alt="img">
+                <h1>AR Rahman</h1>
+            </li>
+            <li class="card">
+                <img src="./images/5.png" alt="img">
+                <h1>Sonu Nigam</h1>
+            </li>
+            <li class="card">
+                <img src="./images/6.png" alt="img">
+                <h1>Darshan Raval</h1>
+            </li>
+            <li class="card">
+                <img src="./images/7.png" alt="img">
+                <h1>Darshan Raval</h1>
+            </li>
+            <li class="card">
+                <img src="./images/8.png" alt="img">
+                <h1>Darshan Raval</h1>
+            </li>
+        </ul>
+        <div class="songBox" id="sBox">
+            <div class="song" id="topmost">
                 <h1 class="songTitle" id="G1"></h1>
                 <span class="control">
                     <img src="./images/play.jpg" class="play" id="1">
@@ -42,26 +99,73 @@
                     <img src="./images/play.jpg" class="play" id="4">
                 </span>
             </div>
-            <div class="song">
+            <div class="song" id="bottommost">
                 <h1 class="songTitle" id="G5"></h1>
                 <span class="control">
                     <img src="./images/play.jpg" class="play" id="5">
                 </span>
             </div>
         </div>
-        <div class="song player">
+        <div class="song player" id="show">
             <p class="playerTitle"></p>
             <p class="timeStamp"></p>
             <input type="range" class="seed" min="0" max="100" value="0">
-            <center>
-                <img src="./images/previous copy.jpg" class="mainPrev">
-                <img src="./images/play copy.jpg" class="mainPlay">
-                <img src="./images/next copy.jpg" class="mainNext">
-            </center>
+            <div class="control_play">
+                <div>
+                    <img src="./images/previous copy.jpg" class="mainPrev">
+                    <img src="./images/play copy.jpg" class="mainPlay">
+                    <img src="./images/next copy.jpg" class="mainNext">
+                </div>
+                <div>
+                    <input type="checkbox" id="check" onchange="showHidePan()">
+                    <label for="check" id="checkbtn"><i class="fa fa-list"></i></label>
+                </div>
+            </div>
         </div>
-        </img>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="./index.js"></script>
+    </div>
+    <div class="section" id="picks">
+        <h1>TOP PICKS</h1>
+        <div class="categories">
+            <h1>New Releases</h1>
+            <hr>
+            <div class="playlists">
+                <img src="./images/9.png">
+                <img src="./images/10.png">
+                <img src="./images/11.png">
+                <img src="./images/12.png">
+                <img src="./images/13.png">
+                <img src="./images/14.png">
+                <img src="./images/15.png">
+                <img src="./images/16.png">
+            </div>
+            <h1>Top India</h1>
+            <hr>
+            <div class="playlists">
+                <img src="./images/17.png">
+                <img src="./images/18.png">
+                <img src="./images/19.png">
+                <img src="./images/20.png">
+                <img src="./images/21.png">
+                <img src="./images/22.png">
+                <img src="./images/23.png">
+                <img src="./images/24.png">
+            </div>
+            <h1>Top World</h1>
+            <hr>
+            <div class="playlists">
+                <img src="./images/25.png">
+                <img src="./images/26.png">
+                <img src="./images/27.png">
+                <img src="./images/28.png">
+                <img src="./images/29.png">
+                <img src="./images/30.png">
+                <img src="./images/31.png">
+                <img src="./images/32.png">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
